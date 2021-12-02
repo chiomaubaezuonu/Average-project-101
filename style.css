@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 40.3rem;
+    height: 223.37rem;
+    margin: auto;
+    margin-top: 8rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+h2{
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #091E42;
+
+ }
+   input,label {
+    padding: 0.3rem;
+}   
+ .inputs1,.inputs2 {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-around;
+    padding: 0.8rem;
+
+}
+.input-container1,.input-container2,.input-container3,.input-container4 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+   
+    
+}
+input{
+    color: #BDBDBD;
+    background: #FAFBFC;
+    width: 15rem;
+    height: 1.9rem;
+    border: 0.1rem solid #DFE1E6;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+
+
+}
+.all-btns {
+    display: flex;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2rem;
+
+    /* justify-content: space-evenly; */
+    
+}
+#btn {
+font-family: 'Lato', sans-serif;
+color: #fff;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 700;
+text-align: center;
+background: #2684FF;
+border: none;
+width: 7rem;
+height: 2rem;
+border-radius: 0.3rem;
+}
+
+#reset {
+font-family: 'Lato', sans-serif;
+color: #2684FF;
+background: #F2F2F2;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 700;
+text-align: center;
+border: 0.1rem solid #2684FF;
+width: 7rem;
+height: 2rem;
+border-radius: 0.3rem;
+margin-right: 1.3rem;
+}
+#average {
+    background: #FFF1F0;
+    width: 14rem;
+    height: 3.1rem;
+    color: #820014;
+    font-style: italic;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0 4rem;
+    margin-top: 1.2rem;
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+
+}
