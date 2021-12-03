@@ -26,27 +26,32 @@ document.getElementById("reset").addEventListener("click", function(){
             
             if (isNaN(aNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input one";
-                
+                document.getElementById("average").style.color = "#820014";
                  }
             else if (isNaN(bNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input two";
+                document.getElementById("average").style.color = "#820014";
             }
 
             else if (isNaN(cNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input three";
+                document.getElementById("average").style.color = "#820014";
             }
 
             else if (isNaN(dNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input four";
+                document.getElementById("average").style.color = "#820014";
             }
                  
                  else {
-                    document.getElementById("average").innerHTML = "The average is " + aveRage;  
+                    document.getElementById("average").innerHTML = "The average is " + aveRage + "!";  
+                    document.getElementById("average").style.color = "#237804";
+                    document.getElementById("average").style.fontSize = "1.3rem";
                 
             }
-
-         
-                // console.log(aNum); 
+            // var buttons = document.getElementsByClassName(‘buttons’); 
+            // buttons.setAttribute(‘id’, ‘Introduction_ 1’)
+            
             
            
          });

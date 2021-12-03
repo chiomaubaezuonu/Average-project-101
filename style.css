@@ -9,11 +9,9 @@
 .container {
     background-color: #ffffff;
     width: 40.3rem;
-    height: 223.37rem;
+    height: 23.37rem;
     margin: auto;
     margin-top: 8rem;
-    /* display: flex;
-    flex-direction: column; */
 }
 h2{
     text-align: center;
@@ -42,16 +40,28 @@ h2{
     
 }
 input{
-    color: #BDBDBD;
+    color: #091E42;
     background: #FAFBFC;
     width: 15rem;
     height: 1.9rem;
     border: 0.1rem solid #DFE1E6;
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     padding-left: 0.5rem;
     border-radius: 0.3rem;
+    margin-left:0.21rem;
+
+
+}
+::placeholder {
+font-family: 'Lato', sans-serif; 
+font-size: 0.87rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4rem;
+text-align: left;
+color: #BDBDBD;
 
 
 }
@@ -63,6 +73,7 @@ input{
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 2rem;
+    margin-left: 3.5rem;
 
     /* justify-content: space-evenly; */
     
@@ -70,13 +81,13 @@ input{
 #btn {
 font-family: 'Lato', sans-serif;
 color: #fff;
-font-size: 0.8rem;
+font-size: 1.12rem;
 font-style: normal;
 font-weight: 700;
 text-align: center;
 background: #2684FF;
 border: none;
-width: 7rem;
+width: 7.9rem;
 height: 2rem;
 border-radius: 0.3rem;
 }
@@ -90,24 +101,71 @@ font-style: normal;
 font-weight: 700;
 text-align: center;
 border: 0.1rem solid #2684FF;
-width: 7rem;
+width: 7.9rem;
 height: 2rem;
 border-radius: 0.3rem;
 margin-right: 1.3rem;
 }
 #average {
     background: #FFF1F0;
-    width: 14rem;
-    height: 3.1rem;
-    color: #820014;
+    width: 15rem;
+    height: 3.5rem;
+    color: #237804;
     font-style: italic;
     border: none;
     font-family: 'Lato', sans-serif;
-    margin: 0 4rem;
+    margin-left: 3rem;
     margin-top: 1.2rem;
-    padding: 1rem 1rem;
-    font-size: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
 
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 12rem;
+        margin: 2rem 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        width: 13rem;
+        font-size: 1rem;
+    }
+    .inputs1,.inputs2 {
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.8rem;
+    
+    }   
+    .all-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.8rem;
+        margin-left: 10rem;
+    }
+    #average {
+        width: 16rem;
+        height: 3rem;
+        margin-left: 5.5rem;
+        font-size: 1rem;
+    }
+    #reset {
+        margin-right: 3rem;
+    }
+    #btn {
+        margin-top: 1rem;
+        margin-right: 10rem;
+
+    }
 }
