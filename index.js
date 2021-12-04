@@ -27,26 +27,33 @@ document.getElementById("reset").addEventListener("click", function(){
             if (isNaN(aNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input one";
                 document.getElementById("average").style.color = "#820014";
+                document.getElementById("average").style.fontSize = "0.87rem";
+        
                  }
             else if (isNaN(bNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input two";
                 document.getElementById("average").style.color = "#820014";
+                document.getElementById("average").style.fontSize = "0.87rem";
             }
 
             else if (isNaN(cNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input three";
                 document.getElementById("average").style.color = "#820014";
+                document.getElementById("average").style.fontSize = "0.87rem";
             }
 
             else if (isNaN(dNum)) {
                 document.getElementById("average").innerHTML = "Please enter a valid number in input four";
                 document.getElementById("average").style.color = "#820014";
+                document.getElementById("average").style.fontSize = "0.87rem";
             }
                  
                  else {
                     document.getElementById("average").innerHTML = "The average is " + aveRage + "!";  
                     document.getElementById("average").style.color = "#237804";
-                    document.getElementById("average").style.fontSize = "1.3rem";
+                    document.getElementById("average").style.fontSize = "1.12rem";
+                    document.getElementById("average").style.backgroundColor = "#F6FFED";
+                    
                 
             }
             // var buttons = document.getElementsByClassName(‘buttons’); 

@@ -8,10 +8,11 @@
 
 .container {
     background-color: #ffffff;
-    width: 40.3rem;
-    height: 23.37rem;
-    margin: auto;
-    margin-top: 8rem;
+    width: 60vw;
+    padding: 3.5rem;
+    margin: 6.5rem 17rem;
+    text-align: center;
+   
 }
 h2{
     text-align: center;
@@ -23,27 +24,28 @@ h2{
  }
    input,label {
     padding: 0.3rem;
+    text-align: left;
 }   
  .inputs1,.inputs2 {
     display: flex;
     font-family: 'Lato', sans-serif;
-    justify-content: space-around;
     padding: 0.8rem;
+    justify-content: center;
 
 }
 .input-container1,.input-container2,.input-container3,.input-container4 {
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    justify-content: space-between;
+    margin-right: 2.2rem;
    
     
 }
 input{
     color: #091E42;
     background: #FAFBFC;
-    width: 15rem;
-    height: 1.9rem;
+    width: 14.43rem;
+    height: 2rem;
     border: 0.1rem solid #DFE1E6;
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
@@ -51,8 +53,12 @@ input{
     padding-left: 0.5rem;
     border-radius: 0.3rem;
     margin-left:0.21rem;
-
-
+}
+#input4 {
+    margin-left: 0.2rem;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }
 ::placeholder {
 font-family: 'Lato', sans-serif; 
@@ -67,13 +73,15 @@ color: #BDBDBD;
 }
 .all-btns {
     display: flex;
+    justify-content: center;
+    /* margin-left: 9.7rem; */
 }
 .buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 2rem;
-    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 
     /* justify-content: space-evenly; */
     
@@ -87,9 +95,10 @@ font-weight: 700;
 text-align: center;
 background: #2684FF;
 border: none;
-width: 7.9rem;
+width: 7.18rem;
 height: 2rem;
 border-radius: 0.3rem;
+margin-left: 1rem;
 }
 
 #reset {
@@ -101,20 +110,20 @@ font-style: normal;
 font-weight: 700;
 text-align: center;
 border: 0.1rem solid #2684FF;
-width: 7.9rem;
+width: 7.18rem;
 height: 2rem;
 border-radius: 0.3rem;
-margin-right: 1.3rem;
+margin-left: 2.6rem;
 }
 #average {
     background: #FFF1F0;
-    width: 15rem;
-    height: 3.5rem;
+    width: 14rem;
+    height: 3rem;
     color: #237804;
     font-style: italic;
     border: none;
     font-family: 'Lato', sans-serif;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 1.2rem;
     padding-top: 0.1rem;
     padding-bottom: 0.5rem;
@@ -125,16 +134,25 @@ margin-right: 1.3rem;
 }
 @media screen and (max-width: 600px) {
     .container {
-        width: 12rem;
-        margin: 2rem 8;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: auto;
+        padding: 2rem 9rem;
+    
+
     }
     h2 {
-        width: 13rem;
+        /* width: 13rem; */
         font-size: 1rem;
+        width: 12rem;
+        text-align: center;
+        margin-right: 1rem;
+    }
+    label {
+        width: 14.43rem;
+        margin-left: 1.5rem;
     }
     .inputs1,.inputs2 {
         display: flex;
@@ -143,29 +161,42 @@ margin-right: 1.3rem;
         justify-content: space-around;
         padding: 0.8rem;
     
-    }   
+    }  
+    .inputs2 {
+        padding-top: 0.3rem;
+    }
+    #input1, #input2, #input3, #input4 {
+        margin-left: 1.5rem;
+    } 
     .all-btns {
         display: flex;
         flex-direction: column;
+        margin-right: 21rem;
+        width: 14.43rem;
     }
     .buttons {
         display: flex;
         flex-direction: column;
-        margin-top: 1.8rem;
-        margin-left: 10rem;
+        margin-top: 0.8rem;
+        margin-left: 9rem;
     }
-    #average {
-        width: 16rem;
-        height: 3rem;
-        margin-left: 5.5rem;
+    #average { 
+        width: 14.43rem;
+        margin-left: 10.5rem;
+        margin-bottom: 1rem;
         font-size: 1rem;
+        
     }
     #reset {
-        margin-right: 3rem;
+        margin-left: 1.5rem;
+        width: 14.43rem;
+
     }
     #btn {
         margin-top: 1rem;
-        margin-right: 10rem;
+        margin-left: 1.5rem;
+        width: 14.43rem;
 
     }
+
 }
